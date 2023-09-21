@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>회원가입 | KANGAROO</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="./images/kangaroo_favicon.ico" type="image/x-icon">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/defalt.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+	<!-- JS -->
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+	<!-- wrap -->
+	<div id="wrap" class="join">
+		<!-- header -->
+		<div id="header">
+			<div class="inr">
+				<h1 class="logo">
+					<a href="./main.html" title="메인으로 가기"><span class="hide">Kangaroo</span>AI 예측분석 솔루션</a>
+				</h1>
+				<ul id="gnb">
+					<li><a href="#">서비스 개요</a></li>
+					<li>
+						<a href="javascript:void(0);">예측분석</a>
+						<ul class="sub-menu">
+							<li><a href="./sub_analyStatus.html">분석 현황</a></li>
+							<li><a href="./sub_analyStart1.html">분석 시작</a></li>
+						</ul>
+					</li>
+					<li><a href="./sub_price1.html">요금안내</a></li>
+					<li>
+						<a href="javascript:void(0);">고객센터</a>
+						<ul class="sub-menu">
+							<li><a href="./sub_faq.html">FAQ</a></li>
+							<li><a href="./sub_contact.html">CONTACT</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="utilMenu">
+					<li class="user-login"><a href="./login.html">Login</a></li>
+					<li class="lang">
+						<a href="#"><span>KOR</span></a>
+						<ul class="lang-list">
+							<li><a href="#">ENG</a></li>
+							<li><a href="#">CHN</a></li>
+						</ul>
+					</li>
+					<li><a href="#" id="btnAll"><span class="hide">전체보기</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //header -->
+		<!-- 전체메뉴 -->
+		<div id="allMenu">
+			<div class="top"><span class="btn-close"><span class="hide">닫기</span></span></div>
+			<ul class="all-list">
+				<li><a href="#"><span>서비스 개요</span></a></li>
+				<li>
+					<a href="javascript:void(0);"><span>예측분석</span></a>
+					<ul class="depth2">
+						<li><a href="./sub_analyStatus.html">- 분석 현황</a></li>
+						<li><a href="./sub_analyStart1.html">- 분석 시작</a></li>
+					</ul>
+				</li>
+				<li><a href="./sub_price1.html"><span>요금안내</span></a></li>
+				<li>
+					<a href="javascript:void(0);"><span>고객센터</span></a>
+					<ul class="depth2">
+						<li><a href="./sub_faq.html">- FAQ</a></li>
+						<li><a href="./sub_contact.html">- CONTACT</a></li>
+					</ul>
+				</li>
+				<li><a href="./login.html" class="col-yellow"><span>LOGIN</span></a></li>
+				<li><a href="./join1.html" class="col-yellow"><span>JOIN</span></a></li>
+			</ul>
+			<p class="txt-copyright">Copyright ⓒ 2020 Kangaroo. All Rights Reserved.</p>
+		</div>
+		<!-- //전체메뉴 -->
+		<div id="subContainer">
+			<div class="sub-content">
+				<div class="inr">
+					<h2>회원가입</h2>
+					<div class="join-wrap">
+						<form>
+							<!-- 기본 정보 -->
+							<div class="basic-box">
+								<div class="tblType4">
+									<table>
+										<caption>회원가입 기본 정보</caption>
+										<colgroup>
+											<col style="width:200px;">
+											<col style="width:*;">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th class="va-t">이메일</th>
+												<td>
+													<div>
+														<input type="text" name="" class="form-control w450 mr10" placeholder="이메일을 입력하세요.">
+														<a href="#" class="btn-send">인증메일 발송</a>
+													</div>
+													<p class="txt-error">이미 사용 중이거나 탈퇴한 아이디 입니다.</p>
+													<!--
+													<div class="mt-1">
+														<input type="text" name="" class="form-control w450 mr10" placeholder="인증번호를 입력하세요.">
+														<a href="#" class="btn-send check">인증번호 확인</a>
+														<div class="info-mail">
+															<a href="#">인증메일을 받지 못하셨나요?</a>
+															<div class="note-box">
+																<i class="btn-close"><span class="hide">닫기</span></i>
+																<p class="note-tit">인증메일을 받지 못하셨나요?</p>
+																<ul>
+																	<li>이메일이 정확한지 확인해 주세요.<br />메일 서비스에 따라 인증번호 발송이 늦어질 수 있습니다.<br />계속해서 이메일이 오지 않으면, 다시 인증번호를 요청해 주세요.</li>
+																</ul>
+																<div class="clear">
+																	<a href="#" class="btn half">인증메일 재발송</a>
+																	<a href="#" class="btn white half">다른 메일로 인증</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													-->
+												</td>
+											</tr>
+											<tr>
+												<th class="va-t">비밀번호</th>
+												<td>
+													<div><input type="password" name="" class="form-control w450" placeholder="비밀번호를 입력하세요."></div>
+													<div class="mt-1"><input type="password" name="" class="form-control w450" placeholder="비밀번호를 다시 입력하세요."></div>
+													<p class="txt-error">비밀번호가 일치하지 않습니다.</p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- //기본 정보 -->
+							<!-- 추가 정보 -->
+							<div class="more-box">
+								<p class="tit">추가 정보 입력 <span>(선택)</span></p>
+								<div class="tblType4">
+									<table>
+										<caption>회원가입 기본 정보</caption>
+										<colgroup>
+											<col style="width:200px;">
+											<col style="width:*;">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th>성별</th>
+												<td>
+													<div class="clear">
+														<a href="#" class="btn-gender active">남자</a>
+														<a href="#" class="btn-gender">여자</a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>생년월일</th>
+												<td>
+													<input type="text" name="" class="form-control w120">
+													<span class="mr25">년</span>
+													<input type="text" name="" class="form-control w80">
+													<span class="mr25">월</span>
+													<input type="text" name="" class="form-control w80">
+													<span>일</span>
+												</td>
+											</tr>
+											<tr>
+												<th>기업명</th>
+												<td><input type="text" name="" class="form-control w450" placeholder="기업명을 입력하세요."></td>
+											</tr>
+											<tr>
+												<th>소재지</th>
+												<td>
+													<select class="form-control w450">
+														<option value="" selected="">선택</option>
+														<option value="">소재지1</option>
+														<option value="">소재지2</option>
+													</select>
+												</td>
+											</tr>
+											<tr>
+												<th>업종</th>
+												<td>
+													<div class="select-wrap pd">
+														<input type="radio" name="sectors" id="s1" class="form-radio" checked="">
+														<label for="s1" class="mr30">농업/임업/어업</label>
+														<input type="radio" name="sectors" id="s2" class="form-radio">
+														<label for="s2" class="mr30">제조업</label>
+														<input type="radio" name="sectors" id="s3" class="form-radio">
+														<label for="s3" class="mr30">건설업</label>
+														<input type="radio" name="sectors" id="s4" class="form-radio">
+														<label for="s4">유통업</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>데이터 분석 경험 정보</th>
+												<td>
+													<div class="select-wrap pd">
+														<input type="radio" name="analysisNum" id="an1" class="form-radio" checked="">
+														<label for="an1" class="mr30">0회</label>
+														<input type="radio" name="analysisNum" id="an2" class="form-radio">
+														<label for="an2" class="mr30">1회 이상 ~ 3회 미만</label>
+														<input type="radio" name="analysisNum" id="an3" class="form-radio">
+														<label for="an3" class="mr30">3회 이상 ~ 10회 미만</label>
+														<input type="radio" name="analysisNum" id="an4" class="form-radio">
+														<label for="an4">10회 이상</label>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th>분석 사용 이유</th>
+												<td><input type="text" name="" class="form-control w450" placeholder="분석 사용 이유를 입력하세요."></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- //추가 정보 -->
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- 버튼 -->
+			<div class="btn-wrap join" id="btnJoin">
+				<div class="inr">
+					<a href="./main.html" class="btn white">취소</a>
+					<a href="./join3.html" class="btn">다음</a>
+				</div>
+			</div>
+			<!-- //버튼 -->
+		</div>
+		<!-- footer -->
+		<div id="footer">
+			<div class="inr">
+				<div class="adress-box">
+					<span class="logo"><span class="hide">Kangaroo</span>AI 예측분석 솔루션</span>
+					<ul class="adress-list">
+						<li>서울시 강남구 언주로 620 현대인텔렉스 10층</li>
+						<li><span class="bd">TEL</span>02.3467.7221</li>
+						<li><span class="bd">FAX</span>02.3467.7221</li>
+						<li><span class="bd">E-mail</span>kangaroo@datasolution.kr </li>
+					</ul>
+					<div class="inform-list">
+						<a href="./terms.html">이용약관</a>
+						<a href="./privacy.html">개인정보처리방침</a>
+					</div>
+				</div>
+				<div class="contact-box">
+					<p class="tit">Contact</p>
+					<form>
+						<input type="text" name="" class="contact-form" placeholder="이름을 입력하세요.">
+						<input type="text" name="" class="contact-form" placeholder="이메일을 입력하세요.">
+						<input type="text" name="" class="contact-form" placeholder="제목을 입력하세요.">
+						<textarea class="contact-form" placeholder="내용을 입력하세요."></textarea>
+						<input type="submit" name="" class="btn-send" value="SEND">
+					</form>
+				</div>
+			</div>
+			<p class="txt-copyright">Copyright ⓒ 2020 Kangaroo. All Rights Reserved.</p>
+		</div>
+		<!-- //footer -->
+		<!-- top 버튼 -->
+		<div id="btnTop"><span class="hide">상단으로 가기</span></div>
+	</div>
+	<!-- //wrap -->
+	<div class="dimm"></div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//인증메일 팝업
+			var mail = $('.join-wrap .info-mail > a');
+			$(mail).on('click' , function(e){
+				e.preventDefault();
+				$(this).toggleClass('on');
+				$(this).parent().find('.note-box').toggleClass('active');
+
+				$('.note-box .btn-close').on('click' , function(){
+					$(this).parent().stop().removeClass('active');
+					$(mail).stop().removeClass('on');
+				});
+			});
+
+			//성별 선택 클릭 이벤트
+			$('.btn-gender').on('click' , function(e){
+				e.preventDefault();
+				$('.btn-gender').removeClass('active');
+				$(this).addClass('active');
+			});
+		});
+	</script>
+</body>
+</html>

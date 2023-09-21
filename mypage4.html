@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>비밀번호 변경 | KANGAROO</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="./images/kangaroo_favicon.ico" type="image/x-icon">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/defalt.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+	<!-- JS -->
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+</head>
+<body>
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- header -->
+		<div id="header">
+			<div class="inr">
+				<h1 class="logo">
+					<a href="./main.html" title="메인으로 가기"><span class="hide">Kangaroo</span>AI 예측분석 솔루션</a>
+				</h1>
+				<ul id="gnb">
+					<li><a href="#">서비스 개요</a></li>
+					<li>
+						<a href="javascript:void(0);">예측분석</a>
+						<ul class="sub-menu">
+							<li><a href="./sub_analyStatus.html">분석 현황</a></li>
+							<li><a href="./sub_analyStart1.html">분석 시작</a></li>
+						</ul>
+					</li>
+					<li><a href="./sub_price1.html">요금안내</a></li>
+					<li>
+						<a href="javascript:void(0);">고객센터</a>
+						<ul class="sub-menu">
+							<li><a href="./sub_faq.html">FAQ</a></li>
+							<li><a href="./sub_contact.html">CONTACT</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul id="utilMenu">
+					<li class="user-info"><a href="#">Kangaroo 님</a></li>
+					<li class="lang">
+						<a href="#"><span>KOR</span></a>
+						<ul class="lang-list">
+							<li><a href="#">ENG</a></li>
+							<li><a href="#">CHN</a></li>
+						</ul>
+					</li>
+					<li><a href="#" id="btnAll"><span class="hide">전체보기</span></a></li>
+				</ul>
+				<div class="info-box">
+					<p class="txt-id"><span>Kangaroo@datasolution.kr</span></p>
+					<div class="bottom">
+						<table summary="">
+							<caption></caption>
+							<tbody>
+								<tr>
+									<th>계정 라이선스 정보:</th>
+									<td>Business 1개월</td>
+								</tr>
+								<tr>
+									<th>만료일:</th>
+									<td>2020-12-31</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="btn-wrap">
+							<a href="./login.html" class="btn-info">로그아웃</a>
+							<a href="./mypage1.html" class="btn-info type2">마이페이지</a>
+							<a href="./sub_analyStatus.html" class="btn-info type3">나의 분석 리스트</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //header -->
+		<!-- 전체메뉴 -->
+		<div id="allMenu">
+			<div class="top"><span class="btn-close"><span class="hide">닫기</span></span></div>
+			<ul class="all-list">
+				<li><a href="#"><span>서비스 개요</span></a></li>
+				<li>
+					<a href="javascript:void(0);"><span>예측분석</span></a>
+					<ul class="depth2">
+						<li><a href="./sub_analyStatus.html">- 분석 현황</a></li>
+						<li><a href="./sub_analyStart1.html">- 분석 시작</a></li>
+					</ul>
+				</li>
+				<li><a href="./sub_price1.html"><span>요금안내</span></a></li>
+				<li>
+					<a href="javascript:void(0);"><span>고객센터</span></a>
+					<ul class="depth2">
+						<li><a href="./sub_faq.html">- FAQ</a></li>
+						<li><a href="./sub_contact.html">- CONTACT</a></li>
+					</ul>
+				</li>
+				<li><a href="./login.html" class="col-yellow"><span>LOGOUT</span></a></li>
+			</ul>
+			<p class="txt-copyright">Copyright ⓒ 2020 Kangaroo. All Rights Reserved.</p>
+		</div>
+		<!-- //전체메뉴 -->
+		<div id="subContainer">
+			<div class="sub-visual">
+				<div class="inr">
+					<p class="subtit">My Page</p>
+					<h1>마이페이지</h1>
+				</div>
+			</div>
+			<div id="navi">
+				<ul>
+					<li class="home"><a href="./main.html" title="메인으로 가기"></a></li>
+					<li>
+						<span>마이페이지</span>
+						<ul class="depth2">
+							<li><a href="./mypage1.html">마이페이지</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="sub-content">
+				<div class="inr">
+					<!-- lnb -->
+						<div id="lnb">
+							<p class="tit">마이페이지</p>
+							<ul>
+								<li class="on"><!-- 페이지 이동 후 열려 있으려면 on 클래스 삽입 -->
+									<a href="javascript:void(0);" class="on">기본정보</a>
+									<ul class="depth2">
+										<li><a href="./mypage1.html" class="on">기본정보</a></li>
+										<li><a href="./mypage5.html">마이데이터</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="javascript:void(0);">결제내역</a>
+									<ul class="depth2">
+										<li><a href="./mypage2.html">결제이력</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<!-- //lnb -->
+					<div class="mypage-wrap">
+						<div class="mypage-box basic">
+							<p class="tit">비밀번호 변경</p>
+							<div class="tblType4">
+								<table>
+									<caption>비밀번호 변경</caption>
+									<colgroup>
+										<col style="width:200px;">
+										<col style="width:*;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>현재 비밀번호</th>
+											<td><input type="password" name="" class="form-control w500" placeholder="현재 비밀번호"></td>
+										</tr>
+										<tr>
+											<th class="va-t">새 비밀번호</th>
+											<td>
+												<input type="password" name="" class="form-control w500" placeholder="새 비밀번호">
+												<input type="password" name="" class="form-control w500 mt-1" placeholder="새 비밀번호 확인">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="btn-wrap">
+							<a href="./mypage1.html" class="btn white">취소</a>
+							<a href="./mypage1.html" class="btn">변경</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<div id="footer">
+			<div class="inr">
+				<div class="adress-box">
+					<span class="logo"><span class="hide">Kangaroo</span>AI 예측분석 솔루션</span>
+					<ul class="adress-list">
+						<li>서울시 강남구 언주로 620 현대인텔렉스 10층</li>
+						<li><span class="bd">TEL</span>02.3467.7221</li>
+						<li><span class="bd">FAX</span>02.3467.7221</li>
+						<li><span class="bd">E-mail</span>kangaroo@datasolution.kr </li>
+					</ul>
+					<div class="inform-list">
+						<a href="./terms.html">이용약관</a>
+						<a href="./privacy.html">개인정보처리방침</a>
+					</div>
+				</div>
+				<div class="contact-box">
+					<p class="tit">Contact</p>
+					<form>
+						<input type="text" name="" class="contact-form" placeholder="이름을 입력하세요.">
+						<input type="text" name="" class="contact-form" placeholder="이메일을 입력하세요.">
+						<input type="text" name="" class="contact-form" placeholder="제목을 입력하세요.">
+						<textarea class="contact-form" placeholder="내용을 입력하세요."></textarea>
+						<input type="submit" name="" class="btn-send" value="SEND">
+					</form>
+				</div>
+			</div>
+			<p class="txt-copyright">Copyright ⓒ 2020 Kangaroo. All Rights Reserved.</p>
+		</div>
+		<!-- //footer -->
+		<!-- top 버튼 -->
+		<div id="btnTop"><span class="hide">상단으로 가기</span></div>
+	</div>
+	<!-- //wrap -->
+	<div class="dimm"></div>
+</body>
+</html>

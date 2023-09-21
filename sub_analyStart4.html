@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>분석시작 | KANGAROO</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="./images/kangaroo_favicon.ico" type="image/x-icon">
+	<!-- CSS -->
+	<!-- mCustomScrollbar : 스크롤바 스타일을 위해 필요합니다. -->
+	<link rel="stylesheet" type="text/css" href="./css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="./css/defalt.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+	<!-- JS -->
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<!-- mCustomScrollbar : 스크롤바 스타일을 위해 필요합니다. -->
+	<script type="text/javascript" src="./js/jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	
+</head>
+<body>
+	<!-- wrap -->
+	<div id="wrap">
+		home
+		<div id="subContainer">
+			<div class="sub-visual">
+				<div class="inr">
+					<p class="subtit">Predictive Analytics</p>
+					<h1>예측분석</h1>
+				</div>
+			</div>
+			<div id="navi">
+				<ul>
+					<li class="home"><a href="./main.html" title="메인으로 가기"></a></li>
+					<li>
+						<span>예측분석</span>
+						<ul class="depth2">
+							<li><a href="#">서비스 개요</a></li>
+							<li><a href="./sub_analyStatus.html">예측분석</a></li>
+							<li><a href="./sub_price1.html">요금안내</a></li>
+							<li><a href="./sub_faq.html">고객센터</a></li>
+						</ul>
+					</li>
+					<li>
+						<span>분석시작</span>
+						<ul class="depth2">
+							<li><a href="./sub_analyStatus.html">분석현황</a></li>
+							<li><a href="./sub_analyStart1.html">분석시작</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="sub-content analytics">
+				<div class="inr">
+					<h2>분석시작</h2>
+					<h3><strong>Kangaroo</strong>의 5단계의 예측분석 과정입니다.</h3>
+					<div class="step-list">
+						<ul>
+							<li class="step1"><a href="./sub_analyStart1.html">프로젝트 생성</a></li>
+							<li class="step2"><a href="./sub_analyStart2.html">데이터 수집</a></li>
+							<li class="step3"><a href="./sub_analyStart3.html">분석 설정</a></li>
+							<li class="step4 on"><a href="./sub_analyStart4.html"">데이터 검토</a></li>
+							<li class="step5"><a href="./sub_analyStart5.html"">모델 결과</a></li>
+						</ul>
+					</div>
+					<div class="clear">
+						<!-- 사이드 바 -->
+						<div id="snb">
+							<ul>
+								<li><a href="#" class="active" data-tab="v107">v107</a></li>
+								<li><a href="#" data-tab="v108">v108</a></li>
+								<li><a href="#" data-tab="v109">v109</a></li>
+								<li><a href="#" data-tab="v110">v110</a></li>
+							</ul>
+						</div>
+						<!-- //사이드 바 -->
+						<!-- v107 tab content -->
+						<div class="row-group tab active" id="v107">
+							<!-- 일별 추세 그래프 -->
+							<div class="row">
+								<p class="tit">일별 추세 그래프</p>
+								<div class="content">
+									<div class="graph-area">
+										<img src="./images/img_graphSample1.jpg" alt="그래프 샘플" />
+									</div>
+								</div>
+							</div>
+							<!-- //일별 추세 그래프 -->
+							<!-- 월별 통계 -->
+							<div class="row type3">
+								<p class="tit">월별 통계</p>
+								<div class="content">
+									<div class="tblType2">
+										<table>
+											<caption>월별 통계</caption>
+											<colgroup>
+												<col style="width:12%;">
+												<col style="width:10%;">
+												<col style="width:10%;">
+												<col style="width:17%;">
+												<col style="width:17%;">
+												<col style="width:17%;">
+												<col style="width:17%;">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>년월</th>
+													<th>유효 수</th>
+													<th>결측치 수</th>
+													<th>최초</th>
+													<th>최대</th>
+													<th>평균</th>
+													<th>합계</th>
+												</tr>
+											</thead>
+										</table>
+									</div>
+									<div class="tblType2 scroll-tbody">
+										<table>
+											<caption></caption>
+											<colgroup>
+												<col style="width:12%;">
+												<col style="width:10%;">
+												<col style="width:10%;">
+												<col style="width:17%;">
+												<col style="width:17%;">
+												<col style="width:17%;">
+												<col style="width:17%;">
+											</colgroup>
+											<tbody>
+												<tr>
+													<td>2014.08</td>
+													<td>27</td>
+													<td>4</td>
+													<td>123,000</td>
+													<td>788,000</td>
+													<td>583,000</td>
+													<td><strong>15,741,000</strong></td>
+												</tr>
+												<tr>
+													<td>2014.09</td>
+													<td>30</td>
+													<td>1</td>
+													<td>114,000</td>
+													<td>589,000</td>
+													<td>361,000</td>
+													<td><strong>10,830,000</strong></td>
+												</tr>
+												<tr>
+													<td>2014.10</td>
+													<td>30</td>
+													<td>0</td>
+													<td>201,000</td>
+													<td>603,000</td>
+													<td>454,000</td>
+													<td><strong>13,620,000</strong></td>
+												</tr>
+												<tr>
+													<td>2014.11</td>
+													<td>29</td>
+													<td>2</td>
+													<td>79,000</td>
+													<td>475,000</td>
+													<td>299,000</td>
+													<td><strong>8,671,000</strong></td>
+												</tr>
+												<tr>
+													<td>2014.12</td>
+													<td>28</td>
+													<td>3</td>
+													<td>81,000</td>
+													<td>152,000</td>
+													<td>214,000</td>
+													<td><strong>9,242,000</strong></td>
+												</tr>
+												<tr>
+													<td>2015.1</td>
+													<td>10</td>
+													<td>2</td>
+													<td>31,000</td>
+													<td>102,000</td>
+													<td>212,000</td>
+													<td><strong>6,123,000</strong></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!-- //월별 통계 -->
+						</div>
+						<!-- //v107 tab content -->
+						<!-- v108 tab content -->
+						<div class="row-group tab" id="v108">v108 탭</div>
+						<!-- //v108 tab content -->
+						<!-- v108 tab content -->
+						<div class="row-group tab" id="v109">v109 탭</div>
+						<!-- //v108 tab content -->
+						<!-- v108 tab content -->
+						<div class="row-group tab" id="v110">v110 탭</div>
+						<!-- //v108 tab content -->
+						<div class="row-group tab" id="v110">v110 탭</div>
+						<!-- 200511 이정민 추가 Start : 결측치 대체방법 -->
+						<div class="row-group tab-bottom">
+							<div class="row type2 mt15">
+								<p class="tit">
+									결측치 대체방법
+									<a href="#" class="btn-note" data-pop="noteWeather" title="결측치 참고사항"><span>결측치란?</span></a>
+								</p>
+								<div class="content">
+									<div class="select-wrap">
+										<input type="radio" name="missingVal" id="proxiAver" class="form-radio" checked="">
+										<label for="proxiAver" class="mr30">근접 평균</label>
+										<input type="radio" name="missingVal" id="periodAver" class="form-radio">
+										<label for="periodAver" class="mr30">과거 동기간 평균</label>
+										<input type="radio" name="missingVal" id="linear" class="form-radio">
+										<label for="linear" class="mr30">선형보간</label>
+										<input type="radio" name="missingVal" id="zero" class="form-radio">
+										<label for="zero" class="mr30">0</label>
+										<input type="radio" name="missingVal" id="noReplace" class="form-radio">
+										<label for="noReplace">대체 안함</label>
+									</div>
+								</div>
+								<!-- 참고사항 -->
+								<div id="noteWeather" class="note-box">
+									<i class="btn-close"><span class="hide">닫기</span></i>
+									<p class="note-tit">결측치란?</p>
+									<ul>
+										<li>- 결측치는 항목에 대한 값이 존재하지 않는다는 것을 의미합니다.</li>
+										<li>- 값이 존재하지 않으면 분석에 활용할 수 없기 때문에, 결측치 대체가 필요합니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- 200511 이정민 추가 End: 결측치 대체방법 -->
+					</div>
+
+					<div class="btn-group row">
+						<a href="./sub_analyStart3.html" class="btn white">이전</a>
+						<a href="#" class="btn js-open" data-pop="popupConfirm">분석시작</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<div id="footer">
+			<div class="inr">
+				<div class="adress-box">
+					<span class="logo"><span class="hide">Kangaroo</span>AI 예측분석 솔루션</span>
+					<ul class="adress-list">
+						<li>서울시 강남구 언주로 620 현대인텔렉스 10층</li>
+						<li><span class="bd">TEL</span>02.3467.7221</li>
+						<li><span class="bd">FAX</span>02.3467.7221</li>
+						<li><span class="bd">E-mail</span>kangaroo@datasolution.kr </li>
+					</ul>
+					<div class="inform-list">
+						<a href="./terms.html">이용약관</a>
+						<a href="./privacy.html">개인정보처리방침</a>
+					</div>
+				</div>
+				<div class="contact-box">
+					<p class="tit">Contact</p>
+					<form>
+						<input type="text" name="" class="contact-form" placeholder="이름을 입력하세요.">
+						<input type="text" name="" class="contact-form" placeholder="이메일을 입력하세요.">
+						<input type="text" name="" class="contact-form" placeholder="제목을 입력하세요.">
+						<textarea class="contact-form" placeholder="내용을 입력하세요."></textarea>
+						<input type="submit" name="" class="btn-send" value="SEND">
+					</form>
+				</div>
+			</div>
+			<p class="txt-copyright">Copyright ⓒ 2020 Kangaroo. All Rights Reserved.</p>
+		</div>
+		<!-- //footer -->
+		<!-- top 버튼 -->
+		<div id="btnTop"><span class="hide">상단으로 가기</span></div>
+		<!-- 퀵메뉴 -->
+		<div id="quickMenu">
+			<a href="#" class="help js-open" data-pop="popupHelp">예측분석 도움말</a>
+			<a href="#">퀵버튼메뉴</a>
+		</div>
+	</div>
+	<!-- //wrap -->
+	<!-- 도움말 -->
+	<div id="popupHelp" class="popType1 js-layer hidden">
+		<div class="pop-head">
+			<span class="tit">[분석 시작] 데이터 검토</span>
+			<span class="btn-close js-close"><span class="hide">닫기</span></span>
+		</div>
+		<div class="pop-body">
+			내용을 입력해 주세요.
+		</div>
+	</div>
+	<!-- //도움말 -->
+	<!-- 컨펌 팝업 -->
+	<div id="popupConfirm" class="popType1 confirm js-layer hidden">
+		<div class="pop-head">
+			<span class="tit">데이터 검토 시작</span>
+			<span class="btn-close js-close"><span class="hide">닫기</span></span>
+		</div>
+		<div class="pop-body">
+			<div class="confirm-box">
+				<p class="tit">
+					예측 모델을 생성하고 있습니다.<br />
+					예상 소요시간은 <span class="col-blue">'4분 ~ 10분'</span>입니다.
+				</p>
+				<p>모델 생성이 완료되면 이메일로 알람을 드립니다.</p>
+			</div>
+		</div>
+	</div>
+	<!-- //컨펌 팝업 -->
+	<div class="dimm"></div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//스크롤바
+			$('.popType1 .pop-body, .tblType2.scroll-tbody').mCustomScrollbar({});
+
+			//table tr 이 4개 이상일때, scroll
+			var trLeng = $('.tblType2.scroll-tbody tr').length;
+			if( trLeng >= 5 ){
+				$('.tblType2.scroll-tbody').addClass('on');
+			}else{
+				$('.tblType2.scroll-tbody').removeClass('on');
+			}
+			
+		});
+	</script>
+</body>
+</html>

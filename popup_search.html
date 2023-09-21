@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>윈도우 팝업 | KANGAROO</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="./images/kangaroo_favicon.ico" type="image/x-icon">
+	<!-- CSS -->
+	<!-- jQuery ui : 날짜선택 datepicker를 위해 필요합니다. -->
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/defalt.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+	<!-- JS -->
+	<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+	<!-- jQuery ui : 날짜선택 datepicker를 위해 필요합니다. -->
+	<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//datepicker 
+			date();
+
+			function date(){
+
+		        $.datepicker.setDefaults({
+		            dateFormat: 'yy.mm.dd' 
+		            ,showOtherMonths: true 
+		            ,showButtonPanel: true
+		            ,buttonImageOnly: true
+		            ,buttonImage: "images/icon_date.png"
+		            ,buttonText: "날짜를 선택해 주세요."
+		            ,changeMonth: true            
+		            ,showOn: "both"
+		            ,yearSuffix: "년"
+		            ,monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] 
+		            ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월']
+		            ,dayNamesMin: ['일','월','화','수','목','금','토']
+		            ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일']
+		            //,minDate: "-7D" //최소 선택일자(-1D:하루전, -1M:한달전, -1Y:일년전)
+		            ,maxDate: "today", //최대 선택일자(+1D:하루후, -1M:한달후, -1Y:일년후)  
+		            
+		            //달력 높이값 조정
+		            beforeShow: function(input) {
+				    	var i_offset= $(input).offset(); //클릭된 input의 위치값 체크
+
+					    setTimeout(function(){
+					       $('#ui-datepicker-div').css({'top':i_offset.top - 33, 'bottom':''});
+					    })
+					}           
+		        });
+
+		        //datepicker로 선언
+		        $("#startDate").datepicker();                    
+		        $("#endDate").datepicker();
+		        
+		        //From의 초기값을 일주일 전 날짜로 설정
+		        $('#startDate').datepicker('setDate', '-7D');
+		        
+		        //To의 초기값을 오늘로 설정
+		        $('#endDate').datepicker('setDate', 'today');
+		    }
+
+		    //검색영역 - 데이터명 선택
+		   $('#dataSelect').on('click' , function(){
+		   		$(this).next('ul').stop().slideToggle(100);
+
+		   		//분석유형 외의 영역 클릭 시 , 창 닫기
+				$('body').click(function(e){
+		           if( $('.search-list').has(e.target).length === 0 ){
+		                $('.txt-select').next().stop().slideUp(100);
+		            }
+		        });
+		   });
+
+		});
+	</script>
+</head>
+<body>
+	<div class="popWindow">
+		<!-- 검색 영역 -->
+		<div class="search-area">
+			<div class="tblSearch">
+				<form>
+					<table>
+						<colgroup>
+							<col style="width:15%;">
+							<col style="width:70%;">
+							<col style="width:15%;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>데이터명</th>
+								<td>
+									<div class="search-list">
+										<span id="dataSelect" class="txt-select">전체</span>
+										<ul>
+											<li>
+												<div class="checks">
+													<input type="checkbox" id="dataAll" name="dataName" checked="">
+													<label for="dataAll">전체</label>
+												</div>
+											</li>
+											<li>
+												<div class="checks">
+													<input type="checkbox" name="dataName" id="data1" checked="">
+													<label for="data1">데이터1</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</td>
+								<td><button type="button" class="btn-search"><span>조회</span></button></td>
+							</tr>
+							<tr>
+								<th>조회기간</th>
+								<td colspan="2">
+									<input type="text" name="startDate" class="form-control w140" id="startDate">
+	                				<span class="from-to"> ~ </span>
+	                				<input type="text" name="endDate" class="form-control w140" id="endDate">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
+		<!-- //검색 영역 -->
+		<p class="txt-total">총 <strong class="col-blue">30</strong>건</p>
+		<!-- 데이터 목록 테이블 -->
+		<div class="tblType2">
+			<table>
+				<caption>데이터 목록</caption>
+				<colgroup>
+					<col style="width:10%;">
+					<col style="width:60%;">
+					<col style="width:30%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">
+							<div class="checks">
+								<input type="checkbox" id="datachkAll" name="dataCheck">
+								<label for="datachkAll"></label>
+							</div>
+						</th>
+						<th scope="col">데이터명</th>
+						<th scope="col">업로드일시</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<div class="checks">
+								<input type="checkbox" id="datachk1" name="dataCheck">
+								<label for="datachk1"></label>
+							</div>
+						</td>
+						<td class="ta-l"><a href="./mypage7.html">상품 데이터 상품 데이터 상품 데이터</a></td>
+						<td>2020.06.21</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="checks">
+								<input type="checkbox" id="datachk2" name="dataCheck">
+								<label for="datachk2"></label>
+							</div>
+						</td>
+						<td class="ta-l"><a href="./mypage7.html">상품 데이터 상품 데이터 상품 데이터 상품 데이터 상품 데이터</a></td>
+						<td>2020.06.21</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="checks">
+								<input type="checkbox" id="datachk3" name="dataCheck">
+								<label for="datachk3"></label>
+							</div>
+						</td>
+						<td class="ta-l"><a href="./mypage7.html">상품 데이터 상품 데이터 상품 데이터</a></td>
+						<td>2020.06.21</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="checks">
+								<input type="checkbox" id="datachk4" name="dataCheck">
+								<label for="datachk4"></label>
+							</div>
+						</td>
+						<td class="ta-l"><a href="./mypage7.html">상품 데이터 상품 데이터 상품 데이터 상품 데이터 상품 데이터</a></td>
+						<td>2020.06.21</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="checks">
+								<input type="checkbox" id="datachk5" name="dataCheck">
+								<label for="datachk5"></label>
+							</div>
+						</td>
+						<td class="ta-l"><a href="./mypage7.html">상품 데이터 상품 데이터 상품 데이터 상품 데이터2 상품 데이터</a></td>
+						<td>2020.06.21</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- //데이터목록 테이블 -->
+		<!-- 페이징 -->
+		<div class="paging">
+			<ul>
+				<li><a href="#" class="btn-first"><span class="hide">맨 앞으로</span></a></li>
+				<li><a href="#" class="btn-prev"><span class="hide">이전으로</span></a></li>
+				<li><a href="#" class="active">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#" class="btn-next"><span class="hide">다음으로</span></a></li>
+				<li><a href="#" class="btn-last"><span class="hide">맨 뒤로</span></a></li>
+			</ul>
+		</div>
+		<!-- //페이징 -->
+	</div>
+</body>
+</html>
